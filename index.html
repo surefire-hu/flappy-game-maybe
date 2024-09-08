@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>titolo</title>
+    <title>Piante vs Zombi</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="game-container">
+        <div class="game-board">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="game-panel">
+            <div class="score">Punteggio: <span id="score">0</span></div>
+            <div class="resources">Soli: <span id="sun">50</span></div>
+            <button id="start-btn">Inizia</button>
+            <button id="pause-btn">Pausa</button>
+            <div class="plant-selection">
+                <button class="plant-btn" data-cost="50">Pianta Sparatutto</button>
+                <button class="plant-btn" data-cost="100">Pianta Solare</button>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
